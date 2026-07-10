@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    if (!(localStorage.getItem('af_student_logged_in') === 'true' && localStorage.getItem('af_student_uuid') && localStorage.getItem('af_student_name'))) {
+      window.location.replace('index.html');
+    }
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#0f0f1a" />
@@ -542,6 +547,8 @@
     <div class="set-row"><div class="sr-lbl">Version</div><span class="sr-val">Sudoku v8</span></div>
     <div class="set-row"><div class="sr-lbl">Powered By</div><span class="sr-val">AcademeForge</span></div>
   </div>
+
+  <button class="btn btn-gho btn-full" style="margin-top:20px; color:var(--dan); font-weight:bold;" onclick="openModal('logoutModal')">Log out</button>
 </section>
 
 </main>
@@ -590,6 +597,18 @@
     <div class="modal-acts">
       <button class="btn btn-pri" onclick="closeModal('gameOverModal');quickRematch()">Try Again</button>
       <button class="btn btn-gho" onclick="closeModal('gameOverModal');openScreen('homeScreen')">Home</button>
+    </div>
+  </div>
+</div>
+
+<div id="logoutModal" class="modal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-ttl" style="text-align: left; font-size: 1.1rem; margin-bottom: 4px;">Log out?</div>
+    <p class="modal-body" style="text-align: left; margin-bottom: 24px; max-width: none;">You'll need to login again to access your courses and profile.</p>
+    <div class="modal-acts" style="flex-direction: column;">
+      <button class="btn btn-dan btn-full" onclick="doLogout()">Yes, Log out</button>
+      <button class="btn btn-gho btn-full" onclick="closeModal('logoutModal')">Cancel</button>
     </div>
   </div>
 </div>
