@@ -517,7 +517,7 @@ let lastTap=0;document.addEventListener('touchend',e=>{const n=Date.now();if(n-l
 async function init(){
   try{
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js').catch(err => console.error('SW registration failed:', err));
+      navigator.serviceWorker.register('/sw.js').catch(err => console.error('SW registration failed:', err));
     }
     loadLocal();loadOfflineQueue();setOnlineState(navigator.onLine);
     consecutiveWins=localData.consecutiveWins||0;
