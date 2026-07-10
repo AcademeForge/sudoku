@@ -4,6 +4,10 @@
 
 <script>
 (function(){
+  if(localStorage.getItem('af_student_logged_in') === 'true' && localStorage.getItem('af_student_uuid') && localStorage.getItem('af_student_name')) {
+    window.location.replace('game.html');
+    return;
+  }
   var dark = localStorage.getItem('af_dark_mode') === '1';
   document.documentElement.setAttribute(
     'data-theme',
@@ -758,6 +762,9 @@ function afSaveSession(student,token,deviceId){
   localStorage.setItem('af_student_mobile',student.mobile||student.phone||'');
   localStorage.setItem('af_student_name',student.name||'Student');
   localStorage.setItem('af_student_email',student.email||'');
+  if(student.profile_icon || student.avatar) {
+    localStorage.setItem('af_student_avatar', student.profile_icon || student.avatar);
+  }
 }
 
 async function doAcademeLogin(){
