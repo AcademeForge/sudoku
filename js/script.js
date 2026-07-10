@@ -235,7 +235,7 @@ function refreshUI(){
   const xp=getXp(),level=getLevel(),wins=getWins(),played=getPlayed(),best=getBestTime();
   const xpData=xpForLevel(xp),tier=getTier(level),rank=getRank();
   const displayName=(af.loggedIn&&af.name)?af.name:(nxdbPlayer?.name||localStorage.getItem('sm_nxdb_username')||'Guest Player');
-  const displayAvatar=localStorage.getItem('sm_nxdb_avatar')||(af.loggedIn?'🎓':'😀');
+  const displayAvatar=localStorage.getItem('af_student_avatar')||localStorage.getItem('sm_nxdb_avatar')||(af.loggedIn?'🎓':'😀');
 
   document.getElementById('headerAvatarBtn').textContent=displayAvatar;
   document.getElementById('heroEyebrow').textContent=`⚡ Level ${level} · ${tier.icon} ${tier.name}`;
