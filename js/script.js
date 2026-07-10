@@ -513,6 +513,12 @@ window.addEventListener('wheel',e=>{if(e.ctrlKey)e.preventDefault();},{passive:f
 document.addEventListener('touchmove',e=>{if(e.touches.length>1)e.preventDefault();},{passive:false});
 let lastTap=0;document.addEventListener('touchend',e=>{const n=Date.now();if(n-lastTap<=300)e.preventDefault();lastTap=n;},false);
 
+/* ═══════════ LOGOUT ═══════════ */
+window.doLogout = function() {
+  localStorage.clear();
+  window.location.replace('index.html');
+};
+
 /* ═══════════ INIT ═══════════ */
 async function init(){
   try{
