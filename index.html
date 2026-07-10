@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f0f1a" />
+  <meta
+    name="description"
+    content="Sudoku Master by AcademeForge — a free brain-training puzzle game designed to sharpen logical thinking, focus, and pattern recognition through classic Sudoku grid challenges. Play online, track streaks, and unlock difficulty tiers."
+  />
+  <meta
+    name="keywords"
+    content="Sudoku Master, AcademeForge Sudoku, sudoku master academeforge, sudoku online free, sudoku puzzle game, brain training game, logic puzzle, sudoku easy medium hard expert, free sudoku India, student brain game, AF games, academeforge games, sudoku solver, number puzzle"
+  />
+  <meta name="author" content="AcademeForge" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://sudoku.academeforge.in/" />
+ 
+  <title>Sudoku Master — Free Brain-Training Puzzle Game | AcademeForge</title>
+ 
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://sudoku.academeforge.in/" />
+  <link rel="alternate" hreflang="hi" href="https://sudoku.academeforge.in/?lang=hi" />
+  <link rel="alternate" hreflang="x-default" href="https://sudoku.academeforge.in/" />
+ 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sudoku Master — AcademeForge" />
+  <meta property="og:title" content="Sudoku Master — Free Brain-Training Puzzle Game | AcademeForge" />
+  <meta property="og:description" content="Sharpen your logical thinking with Sudoku Master — a free, beautifully designed puzzle game by AcademeForge. Easy, Medium, Hard, and Expert levels. Play now." />
+  <meta property="og:url" content="https://sudoku.academeforge.in/" />
+  <meta property="og:image" content="https://academeforge.in/IMG/og-image.webp" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Sudoku Master by AcademeForge — Brain-Training Puzzle Game" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="en_IN" />
+ 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@AcademeForge" />
+  <meta name="twitter:title" content="Sudoku Master — Free Brain-Training Puzzle Game | AcademeForge" />
+  <meta name="twitter:description" content="Classic Sudoku reimagined. Free, fast, and designed for sharp minds. By AcademeForge." />
+  <meta name="twitter:image" content="https://academeforge.in/IMG/og-image.webp" />
+  <meta name="twitter:image:alt" content="Sudoku Master by AcademeForge" />
+ 
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Sudoku Master" />
+  <link rel="apple-touch-icon" href="https://academeforge.in/IMG/logo.png" />
+  <meta name="msapplication-TileColor" content="#0f0f1a" />
+  <meta name="msapplication-TileImage" content="https://academeforge.in/IMG/logo.png" />
+  <meta name="application-name" content="Sudoku Master" />
+  <link rel="icon" type="image/png" href="https://academeforge.in/IMG/logo.png" />
+ 
+  <!-- Dublin Core -->
+  <meta name="DC.title" content="Sudoku Master — AcademeForge Brain-Training Puzzle Game" />
+  <meta name="DC.creator" content="AcademeForge" />
+  <meta name="DC.description" content="Free classic Sudoku puzzle game with four difficulty levels for students worldwide." />
+  <meta name="DC.publisher" content="AcademeForge" />
+  <meta name="geo.region" content="US, GB, IN" />
+  <meta name="geo.placename" content="Global" />
+  <meta name="distribution" content="global" />
+  <meta name="coverage" content="Worldwide, US, UK, India" />
+ 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+ 
+  <!-- ===== STRUCTURED DATA ===== -->
+ 
+  <!-- SoftwareApplication schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Sudoku Master",
+    "alternateName": ["Sudoku Master AcademeForge", "AF Sudoku", "Sudoku Master by AcademeForge"],
+    "operatingSystem": "All",
+    "applicationCategory": "GameApplication",
+    "applicationSubCategory": "Puzzle",
+    "url": "https://sudoku.academeforge.in/",
+    "logo": "https://academeforge.in/IMG/logo.png",
+    "screenshot": "https://academeforge.in/IMG/og-image.webp",
+    "description": "A brain-training puzzle game designed to sharpen logical thinking and focus through classic Sudoku grid challenges. Features four difficulty levels — Easy, Medium, Hard, and Expert — with streak tracking and timer.",
+    "featureList": [
+      "4 difficulty levels: Easy, Medium, Hard, Expert",
+      "Smart puzzle generator with unique solutions",
+      "Timer and streak tracking",
+      "Note-taking mode",
+      "Undo and hint system",
+      "Mobile-first responsive design",
+      "Completely free, no login required"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "AcademeForge",
+      "url": "https://academeforge.in/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AcademeForge",
+      "url": "https://academeforge.in/"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "AcademeForge",
+      "url": "https://academeforge.in/"
+    },
+    "inLanguage": ["en", "hi"]
+  }
+  </script>
+ 
+  <!-- WebSite schema with SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Sudoku Master — AcademeForge",
+    "url": "https://sudoku.academeforge.in/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://sudoku.academeforge.in/?q={search_term_string}",
+      "query-input": "required name={search_term_string}"
+    }
+  }
+  </script>
+ 
+  <!-- WebPage schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Sudoku Master — Free Brain-Training Puzzle Game by AcademeForge",
+    "url": "https://sudoku.academeforge.in/",
+    "description": "Play Sudoku Master, a free brain-training puzzle game by AcademeForge. Choose from Easy, Medium, Hard, and Expert difficulty levels. Sharpen your logical thinking and focus.",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "AcademeForge",
+      "url": "https://academeforge.in/"
+    },
+    "about": {
+      "@type": "SoftwareApplication",
+      "name": "Sudoku Master",
+      "url": "https://sudoku.academeforge.in/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AcademeForge",
+      "url": "https://academeforge.in/"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "AcademeForge", "item": "https://academeforge.in/"},
+        {"@type": "ListItem", "position": 2, "name": "Apps & Games", "item": "https://academeforge.in/#apps"},
+        {"@type": "ListItem", "position": 3, "name": "Sudoku Master", "item": "https://sudoku.academeforge.in/"}
+      ]
+    }
+  }
+  </script>
+ 
+  <!-- FAQPage schema for rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Sudoku Master by AcademeForge?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sudoku Master is a free browser-based brain-training puzzle game by AcademeForge that sharpens logical thinking and focus through classic Sudoku grid challenges with four difficulty levels."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Sudoku Master free to play?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Sudoku Master is completely free to play. No account or login is required. Simply visit sudoku.academeforge.in and start solving."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What difficulty levels does Sudoku Master offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sudoku Master offers four difficulty levels: Easy (ideal for beginners), Medium (for regular players), Hard (for experienced solvers), and Expert (for puzzle masters who want a real challenge)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I play Sudoku Master on mobile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Sudoku Master is fully responsive and works seamlessly on smartphones, tablets, and desktops in any modern browser. It can also be installed as a PWA for offline play."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who made Sudoku Master?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sudoku Master is developed and maintained by AcademeForge, a global student learning technology platform. It is part of AcademeForge's free apps suite alongside Timezy, Zenopulsky, and Capacity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Sudoku Master have hints and undo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Sudoku Master includes a hint system that reveals a single correct cell when you're stuck, an undo function, and a note-taking mode for marking candidate numbers."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo-group">
+      <div class="logo-mark" id="logoMark">
+        <img src="../IMG/AF LOGO 2.jpeg" alt="AF" onerror="this.style.display='none'">AF
+      </div>
+      <div class="logo-text">
+        <div class="name">AcademeForge</div>
+        <div class="sub" id="hdrSub">Sudoku Master</div>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <button class="icon-btn" id="headerAvatarBtn" onclick="openScreen('profileScreen')">😀</button>
+      <button class="icon-btn" onclick="history.back()">←</button>
+    </div>
+  </div>
+</header>
+
+<!-- OFFLINE BANNER -->
+<div id="offlineBanner" class="offline-banner">
+  <div class="offline-marquee">📡 Offline — games save locally and sync when you're back online &nbsp;&nbsp;&nbsp; 📡 Offline — games save locally and sync when you're back online</div>
+</div>
+
+<!-- TOAST -->
+<div class="toast-wrap" id="toastWrap"></div>
+
+<main class="main">
+
+<!-- HOME -->
+<section id="homeScreen" class="screen active">
+  <div class="home-hero">
+    <div class="hero-eyebrow" id="heroEyebrow">⚡ Sudoku Master</div>
+    <div class="hero-name" id="heroName">Challenge Your Brain</div>
+    <div class="hero-sub" id="heroId"></div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-val" id="stLevel">1</div><div class="hero-stat-lbl">Level</div></div>
+      <div class="hero-stat"><div class="hero-stat-val" id="stWins">0</div><div class="hero-stat-lbl">Wins</div></div>
+      <div class="hero-stat"><div class="hero-stat-val" id="stStreak">0</div><div class="hero-stat-lbl">Streak</div></div>
+      <div class="hero-stat"><div class="hero-stat-val" id="stRank">#—</div><div class="hero-stat-lbl">Rank</div></div>
+    </div>
+    <div class="xp-strip">
+      <div class="xp-strip-row">
+        <span class="xp-strip-lv" id="xpLvLabel">Level 1</span>
+        <span class="xp-strip-nums" id="xpNums">0 / 500 XP</span>
+      </div>
+      <div class="xp-track"><div id="xpFill" class="xp-fill" style="width:0%"></div></div>
+    </div>
+  </div>
+
+  <div class="daily-card" id="dailyCard" onclick="startDailyChallenge()">
+    <div class="daily-live-lbl"><span class="daily-live-dot"></span> Daily Challenge</div>
+    <div class="daily-title" id="dailyTitle">Today's Sudoku Challenge</div>
+    <div class="daily-meta">
+      <span id="dailyType">🧩 9×9 Moderate</span>
+      <span id="dailyMeta">+500 Bonus XP</span>
+    </div>
+  </div>
+
+  <div class="qs-row">
+    <div class="qs-card"><div class="qs-val" id="qsWins">0</div><div class="qs-lbl">Wins</div></div>
+    <div class="qs-card"><div class="qs-val" id="qsPlayed">0</div><div class="qs-lbl">Played</div></div>
+    <div class="qs-card"><div class="qs-val" id="qsWinRate">0%</div><div class="qs-lbl">Win Rate</div></div>
+  </div>
+
+  <div style="background:var(--surf-1);border:1px solid var(--bdr-1);border-radius:var(--r-xl);padding:18px;text-align:center;margin-bottom:14px;box-shadow:var(--sh-sm);">
+    <div style="font-size:1.8rem;margin-bottom:9px">🎮</div>
+    <div style="font-family:var(--ff-d);font-size:.92rem;font-weight:700;margin-bottom:5px">Ready to Play?</div>
+    <div style="font-size:.73rem;color:var(--t-3);margin-bottom:14px">Pick your board and difficulty to earn XP</div>
+    <button onclick="navToPlay()" class="btn btn-pri btn-full btn-lg" style="font-family:var(--ff-d);" id="playNowBtn">🚀 Start Playing</button>
+  </div>
+</section>
+
+<!-- PLAY -->
+<section id="playScreen" class="screen">
+  <!-- SETUP -->
+  <div id="setupView">
+    <div class="setup-hero">
+      <div class="setup-hero-title">🎮 New Game</div>
+      <div class="setup-hero-sub">Choose your challenge — earn XP on completion</div>
+    </div>
+    <div class="steps-row">
+      <div class="step-dot active" id="sd1">1</div>
+      <div class="step-line" id="sl1"></div>
+      <div class="step-dot" id="sd2">2</div>
+      <div class="step-line" id="sl2"></div>
+      <div class="step-dot" id="sd3">3</div>
+    </div>
+    <!-- Step 1 -->
+    <div class="step-panel active" id="step1">
+      <div class="board-grid">
+        <div class="board-card quick-card" data-board="4" onclick="selectBoard(4)">
+          <div class="bc-check">✓</div>
+          <div class="bc-icon">⚡</div>
+          <div class="bc-mode">Quick Play</div>
+          <div class="bc-title">4 × 4</div>
+          <div class="bc-desc">Fast, casual, 2–3 min</div>
+          <div class="bc-tags"><span class="bc-tag">4 Hints</span><span class="bc-tag">4 Lives</span></div>
+        </div>
+        <div class="board-card classic-card" data-board="9" onclick="selectBoard(9)">
+          <div class="bc-check">✓</div>
+          <div class="bc-icon">🧩</div>
+          <div class="bc-mode">Classic</div>
+          <div class="bc-title">9 × 9</div>
+          <div class="bc-desc">Full challenge, higher XP</div>
+          <div class="bc-tags"><span class="bc-tag">9 Hints</span><span class="bc-tag">9 Lives</span></div>
+        </div>
+      </div>
+      <div class="step-actions">
+        <button class="btn-next" id="step1Next" onclick="goStep(2)" disabled>Choose Difficulty →</button>
+      </div>
+    </div>
+    <!-- Step 2 -->
+    <div class="step-panel" id="step2">
+      <div class="diff-list" id="diffList"></div>
+      <div class="step-actions">
+        <button class="btn-back" onclick="goStep(1)">← Back</button>
+        <button class="btn-next" id="step2Next" onclick="goStep(3)" disabled>Preview →</button>
+      </div>
+    </div>
+    <!-- Step 3 -->
+    <div class="step-panel" id="step3">
+      <div class="start-summary">
+        <div class="ss-icon" id="ssIcon">🧩</div>
+        <div class="ss-title">Ready!</div>
+        <div class="ss-desc" id="ssDesc">Your puzzle is ready.</div>
+        <div class="ss-tags">
+          <span class="ss-tag p" id="ssBoard">9×9</span>
+          <span class="ss-tag p" id="ssDiff">Easy</span>
+          <span class="ss-tag" id="ssHints">9 Hints</span>
+          <span class="ss-tag" id="ssLives">9 Lives</span>
+        </div>
+        <div class="ss-xp-box">
+          <div class="ss-xp-lbl">XP on completion</div>
+          <div class="ss-xp-val" id="ssXp">+150 XP</div>
+        </div>
+        <button class="btn btn-pri btn-full btn-lg" style="margin-top:16px;font-family:var(--ff-d);" onclick="startGame()">🚀 Start Game</button>
+      </div>
+      <div class="step-actions"><button class="btn-back" onclick="goStep(2)">← Change Settings</button></div>
+    </div>
+  </div>
+
+  <!-- GAME VIEW -->
+  <div id="gameView" style="display:none">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+      <div>
+        <div style="font-family:var(--ff-d);font-size:1rem;font-weight:700;color:var(--t-1)" id="gameTitle">Sudoku</div>
+        <div style="font-size:.66rem;color:var(--t-3);margin-top:3px;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+          <span id="gameDiffBadge" class="pill pill-s">Easy</span>
+          <span id="gameSubtitle">9×9</span>
+          <span id="gameRewardPreview" class="pill pill-p">+150 XP</span>
+          <span id="savingBadge" class="saving-badge">⏳ Saving…</span>
+        </div>
+      </div>
+      <button class="icon-btn" onclick="confirmNewGame()">🔄</button>
+    </div>
+
+    <div id="winStreakBanner" class="streak-banner" style="display:none">
+      <span class="streak-banner-icon">🔥</span>
+      <span class="streak-banner-text" id="streakBannerText">3-Win Streak!</span>
+      <span class="streak-banner-bonus" id="streakBannerBonus">+5 XP bonus</span>
+    </div>
+
+    <div class="game-hud">
+      <div class="hud-cell"><div class="hud-val" id="timerDisplay">00:00</div><div class="hud-lbl">Time</div></div>
+      <div class="hud-cell"><div class="hud-val" id="livesDisplay" style="font-size:.66rem">❤️❤️❤️</div><div class="hud-lbl">Lives</div></div>
+      <div class="hud-cell"><div class="hud-val" id="hintsDisplay">💡×9</div><div class="hud-lbl">Hints</div></div>
+      <div class="hud-cell"><div class="hud-val" id="diffDisplay" style="font-size:.76rem">Easy</div><div class="hud-lbl">Mode</div></div>
+    </div>
+
+    <div class="game-tools">
+      <button id="notesBtn" class="tool-btn" onclick="toggleNotes()"><span class="ti">📝</span><span class="tl">Notes</span></button>
+      <button class="tool-btn" onclick="eraseCell()"><span class="ti">🧹</span><span class="tl">Erase</span></button>
+      <button class="tool-btn" onclick="useHint()"><span class="ti">💡</span><span class="tl">Hint</span></button>
+      <button class="tool-btn" onclick="solvePuzzle()"><span class="ti">🎯</span><span class="tl">Solve</span></button>
+    </div>
+
+    <div class="board-wrap">
+      <div id="sudokuBoard" class="sudoku-board g9"></div>
+    </div>
+    <div id="numpad" class="numpad"></div>
+    <div class="game-acts">
+      <button class="btn btn-gho" onclick="checkBoard()">✔ Check</button>
+      <button class="btn btn-pri" onclick="confirmNewGame()">🔄 New Game</button>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section id="profileScreen" class="screen">
+  <div class="profile-hero">
+    <div class="avatar-ring" id="profileAvatar">😀</div>
+    <div class="profile-name" id="profileName">Guest Player</div>
+    <div class="profile-level-badge" id="profileLevelBadge">⚡ Level 1</div>
+    <div class="tier-badge tier-bronze" id="profileTierBadge">🥉 Bronze</div>
+    <div style="font-size:.68rem;color:var(--t-3);margin-top:5px" id="profileEmail"></div>
+    <div style="margin-top:7px;font-size:.65rem;color:var(--t-3)" id="syncStatus"></div>
+  </div>
+  <div class="pxp-section">
+    <div class="pxp-row">
+      <span class="pxp-lv" id="pxpLv">Level 1</span>
+      <span class="pxp-nums" id="pxpNums">0 / 500 XP</span>
+    </div>
+    <div class="pxp-bar"><div id="pxpFill" class="pxp-fill" style="width:0%"></div></div>
+    <div class="pxp-remaining" id="pxpRemaining">500 XP to next level</div>
+  </div>
+  <div class="sec-lbl" style="margin-top:0">Stats</div>
+  <div class="profile-stats">
+    <div class="pstat"><div class="pstat-value" id="pTotalXp">0</div><div class="pstat-label">Total XP</div></div>
+    <div class="pstat"><div class="pstat-value" id="pWins">0</div><div class="pstat-label">Wins</div></div>
+    <div class="pstat"><div class="pstat-value" id="pPlayed">0</div><div class="pstat-label">Played</div></div>
+    <div class="pstat"><div class="pstat-value" id="pWinRate">0%</div><div class="pstat-label">Win Rate</div></div>
+    <div class="pstat"><div class="pstat-value" id="pBestTime">—</div><div class="pstat-label">Best Time</div></div>
+    <div class="pstat"><div class="pstat-value" id="pGlobalRank">#—</div><div class="pstat-label">Rank</div></div>
+  </div>
+  <div class="sec-lbl">Achievements</div>
+  <div class="ach-grid" id="achGrid"></div>
+  <div id="afProfileCard" style="display:none">
+    <div class="sec-lbl">My Account</div>
+    <div class="set-section">
+      <div class="set-row"><div><div class="sr-lbl">Name</div></div><span class="sr-val" id="afpcName">—</span></div>
+      <div class="set-row"><div><div class="sr-lbl">Phone</div></div><span class="sr-val" id="afpcPhone">—</span></div>
+      <div class="set-row"><div><div class="sr-lbl">Email</div></div><span class="sr-val" id="afpcEmail">—</span></div>
+      <div class="set-row"><div><div class="sr-lbl">Student ID</div></div><span class="sr-val" id="afpcSid">—</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERBOARD -->
+<section id="leaderboardScreen" class="screen">
+  <div class="lb-hero">
+    <div style="font-size:1.9rem;margin-bottom:7px;position:relative;z-index:1">🏆</div>
+    <div class="lb-hero-title">Global Rankings</div>
+    <div class="lb-hero-sub">Updated live · AF Nexus</div>
+  </div>
+  <div id="lbYouBanner" style="display:none" class="lb-you-banner">
+    <div class="lb-you-left">
+      <div style="font-size:1.25rem" id="lbYouAva">😀</div>
+      <div>
+        <div class="lb-you-name" id="lbYouName">You</div>
+        <div class="lb-you-sub" id="lbYouSub">Your ranking</div>
+      </div>
+    </div>
+    <div class="lb-you-rank" id="lbYouRank">#—</div>
+  </div>
+  <div id="lbPodium" class="lb-podium" style="display:none"></div>
+  <div class="lb-list-hdr"><span>Rank</span><span>Player</span><span style="text-align:right">XP / W / Streak</span></div>
+  <div id="lbList" class="lb-list">
+    <div class="empty"><div class="spin" style="margin:0 auto 12px"></div><p>Loading…</p></div>
+  </div>
+</section>
+
+<!-- SETTINGS -->
+<section id="settingsScreen" class="screen">
+  <div class="sec-lbl" style="margin-top:0">Account</div>
+  <div class="set-section">
+    <div class="set-row">
+      <div><div class="sr-lbl">Edit Profile</div><div class="sr-sub">Name & avatar</div></div>
+      <button class="icon-btn" onclick="openEditProfile()">✏️</button>
+    </div>
+    <div class="set-row">
+      <div><div class="sr-lbl">Dark Mode</div></div>
+      <button id="darkToggle" class="toggle" onclick="toggleTheme()"></button>
+    </div>
+    <div class="set-row">
+      <div><div class="sr-lbl">Sync Offline Games</div><div class="sr-sub" id="offlineSyncSub">No pending games</div></div>
+      <button class="icon-btn" onclick="flushOfflineQueue()">☁️</button>
+    </div>
+    <div class="set-row">
+      <div><div class="sr-lbl">Reset Local Data</div><div class="sr-sub">Cloud data stays safe</div></div>
+      <button class="icon-btn" onclick="confirmResetProgress()">🗑️</button>
+    </div>
+    <div class="set-row">
+      <div><div class="sr-lbl">Show Tutorial Again</div></div>
+      <button class="icon-btn" onclick="showOnboarding()">❓</button>
+    </div>
+  </div>
+  <div class="sec-lbl">Rank Tiers</div>
+  <div class="set-section">
+    <div class="set-row"><div class="sr-lbl">🥉 Bronze</div><span class="sr-val" style="color:#b87c50">Level 1–4</span></div>
+    <div class="set-row"><div class="sr-lbl">🥈 Silver</div><span class="sr-val" style="color:#8890a8">Level 5–9</span></div>
+    <div class="set-row"><div class="sr-lbl">🥇 Gold</div><span class="sr-val" style="color:var(--gld)">Level 10–14</span></div>
+    <div class="set-row"><div class="sr-lbl">🔷 Platinum</div><span class="sr-val" style="color:var(--sec)">Level 15–19</span></div>
+    <div class="set-row"><div class="sr-lbl">💎 Diamond</div><span class="sr-val" style="color:var(--pri)">Level 20–24</span></div>
+    <div class="set-row"><div class="sr-lbl">⚔️ Heroic</div><span class="sr-val" style="color:var(--heroic)">Level 25+</span></div>
+  </div>
+  <div class="sec-lbl">XP Rewards</div>
+  <div class="set-section">
+    <div class="set-row"><div class="sr-lbl">4×4 Easy</div><span class="sr-val" style="color:var(--suc)">+50 XP</span></div>
+    <div class="set-row"><div class="sr-lbl">4×4 Moderate</div><span class="sr-val" style="color:var(--suc)">+80 XP</span></div>
+    <div class="set-row"><div class="sr-lbl">4×4 Hard</div><span class="sr-val" style="color:var(--suc)">+120 XP</span></div>
+    <div class="set-row"><div class="sr-lbl">9×9 Easy</div><span class="sr-val" style="color:var(--pri)">+150 XP</span></div>
+    <div class="set-row"><div class="sr-lbl">9×9 Moderate</div><span class="sr-val" style="color:var(--pri)">+250 XP</span></div>
+    <div class="set-row"><div class="sr-lbl">9×9 Hard</div><span class="sr-val" style="color:var(--pri)">+500 XP</span></div>
+    <div class="set-row"><div class="sr-lbl">🎯 Perfect Game</div><span class="sr-val" style="color:var(--wrn)">+10 XP</span></div>
+    <div class="set-row"><div class="sr-lbl">🕵️ No Hints</div><span class="sr-val" style="color:var(--wrn)">+10 XP</span></div>
+    <div class="set-row"><div class="sr-lbl">🗓️ Daily (9×9)</div><span class="sr-val" style="color:var(--gld)">+500 XP</span></div>
+    <div class="set-row"><div class="sr-lbl">🗓️ Daily (4×4)</div><span class="sr-val" style="color:var(--gld)">+250 XP</span></div>
+    <div class="set-row"><div class="sr-lbl">🔥 3+ Win Streak</div><span class="sr-val" style="color:var(--heroic)">+5/+10/+15… XP</span></div>
+  </div>
+  <div class="sec-lbl">About</div>
+  <div class="set-section">
+    <div class="set-row"><div class="sr-lbl">Version</div><span class="sr-val">Sudoku v8</span></div>
+    <div class="set-row"><div class="sr-lbl">Powered By</div><span class="sr-val">AcademeForge</span></div>
+  </div>
+</section>
+
+</main>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <button class="nav-btn active" data-screen="homeScreen" onclick="openScreen('homeScreen')" id="navHome">
+    <div class="nav-icon-wrap">🏠</div><div class="nav-text">Home</div>
+  </button>
+  <button class="nav-btn" data-screen="playScreen" onclick="navToPlay()" id="navPlay">
+    <div class="nav-icon-wrap">🎮</div><div class="nav-text">Play</div>
+  </button>
+  <button class="nav-btn" data-screen="profileScreen" onclick="openScreen('profileScreen')" id="navProfile">
+    <div class="nav-icon-wrap">👤</div><div class="nav-text">Profile</div>
+  </button>
+  <button class="nav-btn" data-screen="leaderboardScreen" onclick="openScreen('leaderboardScreen')" id="navRank">
+    <div class="nav-icon-wrap">🏆</div><div class="nav-text">Rank</div>
+  </button>
+  <button class="nav-btn" data-screen="settingsScreen" onclick="openScreen('settingsScreen')" id="navMore">
+    <div class="nav-icon-wrap">⚙️</div><div class="nav-text">More</div>
+  </button>
+</nav>
+</div>
+
+<!-- MODALS -->
+<div id="winModal" class="modal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-ico">🎉</div>
+    <div class="modal-ttl">Puzzle Solved!</div>
+    <div class="win-breakdown" id="winBreakdown"></div>
+    <div id="levelUpBanner" class="level-up-banner" style="display:none"></div>
+    <div class="modal-acts">
+      <button class="btn btn-pri" onclick="closeModal('winModal');quickRematch()">▶ Again</button>
+      <button class="btn btn-gho" onclick="closeModal('winModal');openScreen('homeScreen')">Home</button>
+    </div>
+  </div>
+</div>
+
+<div id="gameOverModal" class="modal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-ico">💀</div>
+    <div class="modal-ttl">Game Over</div>
+    <p class="modal-body" id="gameOverMsg">You used all your lives. Try again!</p>
+    <div class="modal-acts">
+      <button class="btn btn-pri" onclick="closeModal('gameOverModal');quickRematch()">Try Again</button>
+      <button class="btn btn-gho" onclick="closeModal('gameOverModal');openScreen('homeScreen')">Home</button>
+    </div>
+  </div>
+</div>
+
+<div id="dailyDoneModal" class="modal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-ico">📅</div>
+    <div class="modal-ttl">Daily Complete!</div>
+    <p class="modal-body">You've finished today's challenge. A new one drops at midnight. Come back tomorrow!</p>
+    <div class="modal-acts single">
+      <button class="btn btn-pri" onclick="closeModal('dailyDoneModal')">Got It</button>
+    </div>
+  </div>
+</div>
+
+<div id="editProfileModal" class="modal">
+  <div class="modal-sheet" style="max-height:90dvh;overflow-y:auto;">
+    <div class="modal-handle"></div>
+    <div class="modal-ttl">Edit Profile ✏️</div>
+    <div style="margin:14px 0 12px">
+      <label style="display:block;font-size:.62rem;font-weight:800;color:var(--t-3);margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em">Username</label>
+      <input id="editUsername" type="text" maxlength="20" placeholder="Your display name"
+        style="width:100%;height:44px;padding:0 13px;border-radius:var(--r-md);border:1.5px solid var(--bdr-2);background:var(--surf-3);color:var(--t-1);font-size:.86rem;"
+        onfocus="this.style.borderColor='var(--pri)'" onblur="this.style.borderColor='var(--bdr-2)'">
+    </div>
+    <div style="margin-bottom:12px">
+      <label style="display:block;font-size:.62rem;font-weight:800;color:var(--t-3);margin-bottom:7px;text-transform:uppercase;letter-spacing:.06em">Avatar</label>
+      <div id="editAvatarGrid" style="display:grid;grid-template-columns:repeat(6,1fr);gap:6px;max-height:210px;overflow-y:auto;padding-right:3px;"></div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:4px">
+      <button class="btn btn-gho" style="flex:1;height:46px" onclick="closeModal('editProfileModal')">Cancel</button>
+      <button class="btn btn-pri" style="flex:2;height:46px" onclick="saveProfileEdit()">Save</button>
+    </div>
+  </div>
+</div>
+
+<div id="confirmModal" class="modal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-ico" id="confirmIcon">⚠️</div>
+    <div class="modal-ttl" id="confirmTitle">Are you sure?</div>
+    <p class="modal-body" id="confirmMsg">This cannot be undone.</p>
+    <div class="modal-acts">
+      <button class="btn btn-dan" id="confirmOkBtn">Confirm</button>
+      <button class="btn btn-gho" onclick="closeModal('confirmModal')">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- ONBOARDING OVERLAY -->
+<div id="onboardOverlay" class="onboard-overlay hidden">
+  <div class="onboard-sheet">
+    <div class="onboard-steps" id="obDots"></div>
+    <div class="ob-ico" id="obIco"></div>
+    <div class="ob-title" id="obTitle"></div>
+    <div class="ob-desc" id="obDesc"></div>
+    <div class="ob-highlight" id="obHighlight" style="display:none">
+      <div class="ob-hl-icon" id="obHlIcon"></div>
+      <div class="ob-hl-text" id="obHlText"></div>
+    </div>
+    <div class="ob-acts">
+      <button class="ob-skip" onclick="skipOnboarding()">Skip</button>
+      <button class="ob-next" id="obNextBtn" onclick="nextOnboardStep()">Next →</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/leaderboard.js"></script>
+<script src="js/game.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
